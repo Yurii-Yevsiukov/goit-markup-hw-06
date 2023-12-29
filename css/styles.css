@@ -136,8 +136,6 @@ img {
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 .logo span {
@@ -214,8 +212,6 @@ img {
 .contact-nav .link:hover,
 .contact-nav .link:focus {
   color: var(--accent-color);
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 .contact-nav-icon {
@@ -280,8 +276,6 @@ img {
 .solutions .button:hover,
 .solutions .button:focus {
   background-color: #188ce8;
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 /* Особливості */
@@ -452,8 +446,6 @@ img {
 .icon-wrap .link-icon:focus {
   fill: var(--primary-bg-color);
   background-color: var(--accent-color);
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 /* Постійні клієнти */
@@ -488,8 +480,6 @@ img {
 .clients-list .link-icon:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 .clients-list .icon-clients {
@@ -571,8 +561,6 @@ img {
 .link.mail:focus,
 .link.tel:focus {
   color: var(--accent-color);
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 .footer-socials {
@@ -618,8 +606,6 @@ img {
 .footer-socials .link-icon:hover,
 .footer-socials .link-icon:focus {
   background-color: var(--accent-color);
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 .footer-subscribe {
@@ -731,8 +717,6 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 /* Список наших робіт */
@@ -768,8 +752,6 @@ img {
 .portfolio-list .link-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 .portfolio-thumb {
@@ -806,8 +788,6 @@ img {
 
 .portfolio .item:hover .portfolio-thumb .overlay {
   transform: translateY(0);
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: var(--timing-funсtion); */
 }
 
 .portfolio-list .portfolio-descr {
@@ -993,6 +973,7 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.42px;
+  cursor: pointer;
 }
 
 .terms-use::before {
@@ -1010,6 +991,17 @@ img {
   line-height: 1.714;
   letter-spacing: 0.42px;
   text-decoration-line: underline;
+}
+
+.agreement + .terms-use::before {
+  border-color: #000000;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-funсtion);
+}
+
+.agreement:hover + .terms-use::before,
+.agreement:focus + .terms-use::before {
+  border-color: var(--accent-color);
 }
 
 .agreement:checked + .terms-use::before {
